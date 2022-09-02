@@ -1,0 +1,45 @@
+{
+  "name": "lyradig",
+  "version": "1.0.0",
+  "author": {
+    "name": "John Patrick Madrigal",
+    "email": "jp.madrigal07@gmail.com",
+    "github": "https://github.com/jpmadrigal07"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
+    "@tailwindcss/forms": "^0.5.2",
+    "axios": "^0.27.2",
+    "cookie": "^0.5.0",
+    "dotenv": "^16.0.1",
+    "formik": "^2.2.9",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.4",
+    "next": "12.1.6",
+    "ramda": "^0.28.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-hot-toast": "^2.2.0",
+    "react-query": "^3.39.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "husky": "^8.0.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "tailwindcss": "^3.0.24"
+  }
+}

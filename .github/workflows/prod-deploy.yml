@@ -1,0 +1,23 @@
+name: prod-deploy
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deployment:
+    runs-on: prod
+    environment: production
+    env:
+      APP_URL: ${{secrets.APP_URL}}
+      API_URL: ${{secrets.API_URL}}
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: yarn install
+      - run: yarn build
+      - run: pm2 delete lyradig
+        continue-on-error: true
+      - run: pm2 start npm --name lyradig -- run start
+      - run: pm2 describe lyradig
+      - run: pm2 logs --nostream
